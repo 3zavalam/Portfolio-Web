@@ -32,22 +32,26 @@ with col2:
 
 st.write("### Portfolio Projects")
 st.write("Click on each project to learn more about them:")
-st.markdown("""
-1. [**Post-Match Dashboard**](/dashboard)  
-   - Tools: Matplotlib, Scraping (BeautifulSoup)  
-   - Created an interactive sales dashboard for insights into regional performance.
-         
----
-2. [**xG Prediction Model**](/xGmodel)  
-   - Tools: Python (Scikit-learn, Pandas)  
-   - Built a machine learning model to predict customer churn.
-         
----
-3. [**Streamlit Web**](/interactiveWeb)  
-   - Tools: Python (BeautifulSoup, NLTK)  
-   - Analyzed customer reviews for product sentiment trends.
-""")
 
+st.page_link("pages/1Dashboard.py", label="1. **Post-Match Dashboard**", icon="📊")
+st.write("""
+    - Tools: Matplotlib, Scraping (BeautifulSoup)  
+    - Created a dashbord to analyze post game statistics for a soccer match.
+         """)
+
+st.page_link("pages/2xG Model.py", label="2. **xG Prediction Model**", icon="⚽")
+st.write("""
+    - Tools: Python (Scikit-learn, Pandas)  
+    - Built a machine learning model to predict the possibility of a shot to end in a goal.
+
+         """)
+
+st.page_link("pages/3Interactive Web.py", label="3. **Streamlit Web**", icon="🌐")
+st.write("""
+   - Tools: Python (BeautifulSoup, NLTK, Matplotlib, Streamlit)
+   - Created an interactive web application to generate radar charts, shot maps, and team statistics.
+         """)  
+st.markdown("---")
 
 st.write("### Contact Me:")
 col1, col2, col3 = st.columns(3)
@@ -56,7 +60,7 @@ with col1:
 with col2:
     st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-Follow-black)](https://github.com/3zavalam)")
 with col3:
-    st.markdown("[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:your_email@example.com)")
+    st.markdown("[![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:3zavalam.tech@gmail.com)")
 
 st.markdown("---")
 st.write("© 2025 Emilio Zavala. All rights reserved.")
